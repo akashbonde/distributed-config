@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+app:
+  security:
+    public-routes:
+
+
+spring:
+  cloud:
+    gateway:
