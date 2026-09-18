@@ -54,7 +54,15 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
-
+feign:
+  httpclient:
+    hc5:
+      enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
 logging:
   level:
     org.apache.kafka.clients: WARN
